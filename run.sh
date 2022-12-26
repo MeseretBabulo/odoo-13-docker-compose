@@ -16,4 +16,8 @@ sed -i 's/20013/'$CHAT'/g' $DESTINATION/docker-compose.yml
 # run Odoo
 docker-compose -f $DESTINATION/docker-compose.yml up -d
 
+# create db on odoo13
+#!/bin/sh
+python3 db_script.py
+
 echo 'Started Odoo @ http://localhost:'$PORT' | Live chat port: '$CHAT
