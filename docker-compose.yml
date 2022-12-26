@@ -1,7 +1,7 @@
 version: '2'
 services:
   db:
-    image: postgres:10
+    image: postgres:13
     user: root
     environment:
       - POSTGRES_PASSWORD=odoo
@@ -11,13 +11,13 @@ services:
     volumes:
         - ./postgresql:/var/lib/postgresql/data
 
-  odoo10:
-    image: odoo:10
+  odoo13:
+    image: odoo:13
     user: root
     depends_on:
       - db
     ports:
-      - "10011:8069"
+      - "10013:8069"
       - "20013:8072" # live chat
     tty: true
     command: --
