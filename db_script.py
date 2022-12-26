@@ -17,7 +17,7 @@ print("Script Running......")
 print("Script Running......")
 
 req_data = {"params" :{
-    'master_pwd' : 'amen',
+    'master_pwd' : 'admin',
     'name': 'Script_DB',
     'lang': 'en_US',
     'login' :'admin', 
