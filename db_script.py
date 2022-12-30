@@ -28,7 +28,7 @@ req_data = {"params" :{
 
 print(pprint.pformat(req_data))
 
-_url = "http://127.0.0.1:11015/script/database/create/api" 
+_url = "http://127.0.0.1:10013/script/database/create/api" 
 
 request_headers = {
         "Content-Type": "application/json",
